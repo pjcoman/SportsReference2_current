@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string
+        name="edittext_hint">start with 1st name</string>
+    <string
+        name="edittext_hint2">press for clear</string>
+    <string
+        name="edittext_hint3">player/league/season (i.e. 2016)</string>
+
+    <string name="app_name">sports reference</string>
+
+    <string name="name" translatable = "false">Name</string>
+    <string name="type" translatable = "false">type</string>
+    <string name="instructions">Long press for favorites and timer in settings.</string>
+    <string name="show" translatable = "false">show instructions</string>
+
+    <string-array name="sports">
+        <item>baseball</item>
+        <item>football</item>
+        <item>hockey</item>
+        <item>basketball</item>
+        <item>college_football</item>
+        <item>college_basketball</item>
+        <item>soccer</item>
+
+    </string-array>
+
+    <string-array name="integers">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="mlbteams">
+        <item>MLB</item>
+        <item>Arizona Diamondbacks</item>
+        <item>Atlanta Braves</item>
+        <item>Baltimore Orioles</item>
+        <item>Boston Red Sox</item>
+        <item>Chicago Cubs</item>
+        <item>Chicago White Sox</item>
+        <item>Cincinnati Reds</item>
+        <item>Cleveland Indians</item>
+        <item>Colorado Rockies</item>
+        <item>Detroit Tigers</item>
+        <item>Houston Astros</item>
+        <item>Kansas City Royals</item>
+        <item>Los Angeles Angels</item>
+        <item>Los Angeles Dodgers</item>
+        <item>Miami Marlins</item>
+        <item>Milwaukee Brewers</item>
+        <item>Minnesota Twins</item>
+        <item>New York Mets</item>
+        <item>New York Yankees</item>
+        <item>Oakland Athletics</item>
+        <item>Philadelphia Phillies</item>
+        <item>Pittsburgh Pirates</item>
+        <item>San Diego Padres</item>
+        <item>San Francisco Giants</item>
+        <item>Seattle Mariners</item>
+        <item>St. Louis Cardinals</item>
+        <item>Tampa Bay Rays</item>
+        <item>Texas Rangers</item>
+        <item>Toronto Blue Jays</item>
+        <item>Washington Nationals</item>
+
+    </string-array>
+
+    <string-array name="nflteams">
+        <item>NFL</item>
+        <item>Arizona Cardinals</item>
+        <item>Atlanta Falcons</item>
+        <item>Baltimore Ravens</item>
+        <item>Buffalo Bills</item>
+        <item>Carolina Panthers</item>
+        <item>Chicago Bears</item>
+        <item>Cincinnati Bengals</item>
+        <item>Cleveland Browns</item>
+        <item>Dallas Cowboys</item>
+        <item>Denver Broncos</item>
+        <item>Detroit Lions</item>
+        <item>Green Bay Packers</item>
+        <item>Houston Texans</item>
+        <item>Indianapolis Colts</item>
+        <item>Jacksonville Jaguars</item>
+        <item>Kansas City Chiefs</item>
+        <item>Los Angeles Chargers</item>
+        <item>Los Angeles Rams</item>
+        <item>Miami Dolphins</item>
+        <item>Minnesota Vikings</item>
+        <item>New England Patriots</item>
+        <item>New Orleans Saints</item>
+        <item>New York Giants</item>
+        <item>New York Jets</item>
+        <item>Oakland Raiders</item>
+        <item>Philadelphia Eagles</item>
+        <item>Pittsburgh Steelers</item>
+        <item>San Francisco 49ers</item>
+        <item>Seattle Seahawks</item>
+        <item>Tampa Bay Buccaneers</item>
+        <item>Tennessee Titans</item>
+        <item>Washington Redskins</item>
+
+    </string-array>
+
+    <string-array name="nhlteams">
+        <item>NHL</item>
+        <item>Anaheim Ducks</item>
+        <item>Arizona Coyotes</item>
+        <item>Boston Bruins</item>
+        <item>Buffalo Sabres</item>
+        <item>Calgary Flames</item>
+        <item>Carolina Hurricanes</item>
+        <item>Chicago Blackhawks</item>
+        <item>Colorado Avalanche</item>
+        <item>Columbus Blue Jackets</item>
+        <item>Dallas Stars</item>
+        <item>Detroit Red Wings</item>
+        <item>Edmonton Oilers</item>
+        <item>Florida Panthers</item>
+        <item>Los Angeles Kings</item>
+        <item>Minnesota Wild</item>
+        <item>Montreal Canadiens</item>
+        <item>Nashville Predators</item>
+        <item>New Jersey Devils</item>
+        <item>New York Islanders</item>
+        <item>New York Rangers</item>
+        <item>Ottawa Senators</item>
+        <item>Philadelphia Flyers</item>
+        <item>Pittsburgh Penguins</item>
+        <item>San Jose Sharks</item>
+        <item>St. Louis Blues</item>
+        <item>Tampa Bay Lightning</item>
+        <item>Toronto Maple Leafs</item>
+        <item>Vancouver Canucks</item>
+        <item>Vegas Golden Knights</item>
+        <item>Washington Capitals</item>
+        <item>Winnipeg Jets</item>
+
+    </string-array>
+
+    <string-array name="nbateams">
+        <item>NBA</item>
+        <item>Atlanta Hawks</item>
+        <item>Boston Celtics</item>
+        <item>Brooklyn Nets</item>
+        <item>Charlotte Hornets</item>
+        <item>Chicago Bulls</item>
+        <item>Cleveland Cavaliers</item>
+        <item>Dallas Mavericks</item>
+        <item>Denver Nuggets</item>
+        <item>Detroit Pistons</item>
+        <item>Golden State Warriors</item>
+        <item>Houston Rockets</item>
+        <item>Indiana Pacers</item>
+        <item>Los Angeles Clippers</item>
+        <item>Los Angeles Lakers</item>
+        <item>Memphis Grizzlies</item>
+        <item>Miami Heat</item>
+        <item>Milwaukee Bucks</item>
+        <item>Minnesota Timberwolves</item>
+        <item>New Orleans Pelicans</item>
+        <item>New York Knicks</item>
+        <item>Oklahoma City Thunder</item>
+        <item>Orlando Magic</item>
+        <item>Philadelphia 76ers</item>
+        <item>Phoenix Suns</item>
+        <item>Portland Trail Blazers</item>
+        <item>Sacramento Kings</item>
+        <item>San Antonio Spurs</item>
+        <item>Toronto Raptors</item>
+        <item>Utah Jazz</item>
+        <item>Washington Wizards</item>
+
+    </string-array>
+
+    <string-array name="nbateamlinks">
+
+
+        <item>https://www.basketball-reference.com/teams/ATL/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/BOS/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/BRK/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/CHI/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/CHO/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/CLE/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/DAL/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/DEN/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/DET/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/GSW/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/HOU/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/IND/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/LAC/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/LAL/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/MEM/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/MIA/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/MIL/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/MIN/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/NOP/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/NYK/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/OKC/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/ORL/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/PHI/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/PHO/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/POR/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/SAC/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/SAS/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/TOR/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/UTA/clubhouse.html</item>
+        <item>https://www.basketball-reference.com/teams/WAS/clubhouse.html</item>
+
+
+    </string-array>
+
+
+
+    <string-array name="nflteamlinks">
+
+        <item>https://www.pro-football-reference.com/teams/crd/</item>
+        <item>https://www.pro-football-reference.com/teams/atl/</item>
+        <item>https://www.pro-football-reference.com/teams/rav/</item>
+        <item>https://www.pro-football-reference.com/teams/buf/</item>
+        <item>https://www.pro-football-reference.com/teams/car/</item>
+        <item>https://www.pro-football-reference.com/teams/chi/</item>
+        <item>https://www.pro-football-reference.com/teams/cin/</item>
+        <item>https://www.pro-football-reference.com/teams/cle/</item>
+        <item>https://www.pro-football-reference.com/teams/dal/</item>
+        <item>https://www.pro-football-reference.com/teams/den/</item>
+        <item>https://www.pro-football-reference.com/teams/det/</item>
+        <item>https://www.pro-football-reference.com/teams/gnb/</item>
+        <item>https://www.pro-football-reference.com/teams/htx/</item>
+        <item>https://www.pro-football-reference.com/teams/clt/</item>
+        <item>https://www.pro-football-reference.com/teams/jax/</item>
+        <item>https://www.pro-football-reference.com/teams/kan/</item>
+        <item>https://www.pro-football-reference.com/teams/sdg/</item>
+        <item>https://www.pro-football-reference.com/teams/ram/</item>
+        <item>https://www.pro-football-reference.com/teams/mia/</item>
+        <item>https://www.pro-football-reference.com/teams/min/</item>
+        <item>https://www.pro-football-reference.com/teams/nwe/</item>
+        <item>https://www.pro-football-reference.com/teams/nor/</item>
+        <item>https://www.pro-football-reference.com/teams/nyg/</item>
+        <item>https://www.pro-football-reference.com/teams/nyj/</item>
+        <item>https://www.pro-football-reference.com/teams/rai/</item>
+        <item>https://www.pro-football-reference.com/teams/phi/</item>
+        <item>https://www.pro-football-reference.com/teams/pit/</item>
+        <item>https://www.pro-football-reference.com/teams/sfo/</item>
+        <item>https://www.pro-football-reference.com/teams/sea/</item>
+        <item>https://www.pro-football-reference.com/teams/tam/</item>
+        <item>https://www.pro-football-reference.com/teams/oti/</item>
+        <item>https://www.pro-football-reference.com/teams/was/</item>
+
+
+
+
+
+
+
+    </string-array>
+
+
+
+    <string-array name="nhlteamlinks">
+
+
+        <item>https://www.hockey-reference.com/teams/ANA/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/ARI/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/BOS/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/BUF/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/CGY/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/CAR/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/CHI/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/COL/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/CBJ/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/DAL/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/DET/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/EDM/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/FLA/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/LAK/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/MIN/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/MTL/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/NSH/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/NJD/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/NYI/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/NYR/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/OTT/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/PHI/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/PIT/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/SJS/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/STL/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/TBL/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/TOR/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/VAN/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/VEG/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/WSH/clubhouse.html</item>
+        <item>https://www.hockey-reference.com/teams/WPG/clubhouse.html</item>
+
+
+    </string-array>
+
+
+
+    <string-array name="mlbteamlinks">
+        <item>https://www.baseball-reference.com/teams/ARI/</item>
+        <item>https://www.baseball-reference.com/teams/ATL/</item>
+        <item>https://www.baseball-reference.com/teams/BAL/</item>
+        <item>https://www.baseball-reference.com/teams/BOS/</item>
+        <item>https://www.baseball-reference.com/teams/CHC/</item>
+        <item>https://www.baseball-reference.com/teams/CHW/</item>
+        <item>https://www.baseball-reference.com/teams/CIN/</item>
+        <item>https://www.baseball-reference.com/teams/CLE/</item>
+        <item>https://www.baseball-reference.com/teams/COL/</item>
+        <item>https://www.baseball-reference.com/teams/DET/</item>
+        <item>https://www.baseball-reference.com/teams/HOU/</item>
+        <item>https://www.baseball-reference.com/teams/KCR/</item>
+        <item>https://www.baseball-reference.com/teams/ANA/</item>
+        <item>https://www.baseball-reference.com/teams/LAD/</item>
+        <item>https://www.baseball-reference.com/teams/FLA/</item>
+        <item>https://www.baseball-reference.com/teams/MIL/</item>
+        <item>https://www.baseball-reference.com/teams/MIN/</item>
+        <item>https://www.baseball-reference.com/teams/NYM/</item>
+        <item>https://www.baseball-reference.com/teams/NYY/</item>
+        <item>https://www.baseball-reference.com/teams/OAK/</item>
+        <item>https://www.baseball-reference.com/teams/PHI/</item>
+        <item>https://www.baseball-reference.com/teams/PIT/</item>
+        <item>https://www.baseball-reference.com/teams/SDP/</item>
+        <item>https://www.baseball-reference.com/teams/SFG/</item>
+        <item>https://www.baseball-reference.com/teams/SEA/</item>
+        <item>https://www.baseball-reference.com/teams/STL/</item>
+        <item>https://www.baseball-reference.com/teams/TBD/</item>
+        <item>https://www.baseball-reference.com/teams/TEX/</item>
+        <item>https://www.baseball-reference.com/teams/TOR/</item>
+        <item>https://www.baseball-reference.com/teams/WSN/</item>
+
+
+
+
+
+
+
+    </string-array>
+
+
+    <string name="timer">seconds till auto-enter</string>
+
+    <string name="chtoast">history cleared</string>
+    <string name="ch">clear history</string>
+    <string name="settings">settings</string>
+    <string name="sbt">search bar TOP</string>
+    <string name="sbb">search bar BOTTOM</string>
+
+    <string name="quickstartMLB" translatable = "false">MLB</string>
+    <string name="quickstart_longMLB" translatable = "false">BASEBALL</string>
+    <string name="quickstartNFL" translatable = "false">NFL</string>
+    <string name="quickstart_longNFL" translatable = "false">FOOTBALL</string>
+    <string name="quickstartNHL" translatable = "false">NHL</string>
+    <string name="quickstart_longNHL" translatable = "false">HOCKEY</string>
+    <string name="quickstartNBA" translatable = "false">NBA</string>
+    <string name="quickstart_longNBA" translatable = "false">BASKETBALL</string>
+
+    <string name="quickstart_disabled" translatable = "false">BASKETBALL</string>
+
+    <string name="my_teams">my teams</string>
+    <string name="bbicon" translatable = "false">bbicon</string>
+    <string name="fbicon" translatable = "false">fbicon</string>
+    <string name="hicon" translatable = "false">hicon</string>
+    <string name="bkbicon" translatable = "false">bkbicon</string>
+    <string name="cfbicon" translatable = "false">cfbicon</string>
+    <string name="cbbicon" translatable = "false">cbbicon</string>
+    <string name="ftbicon" translatable = "false">ftbicon</string>
+    <string name = "sh" translatable = "false">search history</string>
+    <string name = "contentdes" translatable = "false">background image</string>
+    <string name = "icon" translatable = "false">icon</string>
+    <string name = "iconString" translatable = "false">icon</string>
+
+
+</resources>

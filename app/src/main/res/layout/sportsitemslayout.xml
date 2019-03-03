@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:id = "@+id/framelayoutsi"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical">
+
+
+
+    <android.support.constraint.ConstraintLayout android:id="@+id/constraintlayoutsi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/layout_rounded_corners_transparent"
+            android:cursorVisible="true"
+            android:dropDownWidth="match_parent"
+            android:ems="8"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="@string/edittext_hint"
+            android:inputType="text|textNoSuggestions|textPersonName"
+            android:padding="12dp"
+            android:popupBackground="#83ffffff"
+            android:textColor="@color/fui_bgGoogle"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sportsItemRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="false"
+            android:foregroundGravity="center_horizontal"
+            android:paddingBottom="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchText">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/layout_rounded_corners_blacktogray_lr"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="100dp"
+        android:visibility="gone">
+
+
+        <ProgressBar
+            android:id="@+id/progressSpinner"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:max="100"
+            android:paddingTop="40dp"
+            android:progress="0"
+            android:secondaryProgress="100">
+
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+</FrameLayout>

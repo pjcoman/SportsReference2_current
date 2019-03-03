@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:background = "@color/blackhalftransparent2"
+    android:gravity = "center"
+    android:orientation = "vertical"
+    android:padding = "20dp">
+
+    <TextView
+        android:id = "@+id/textTitleSettings"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginEnd = "40dp"
+        android:layout_marginStart = "40dp"
+        android:layout_marginTop = "20dp"
+        android:gravity = "center_horizontal"
+        android:padding = "6dp"
+        android:text = "@string/timer"
+        android:textAlignment = "center"
+        android:textColor = "@android:color/white"
+        android:textSize = "18sp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+
+    <Spinner
+        android:id = "@+id/spinnerFilterChar"
+        style = "@style/mySpinnerItemStyle"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:padding = "16dp"
+        android:popupBackground = "@color/blackhalftransparent"
+        android:theme = "@android:style/Widget.Holo.Light.DropDownItem.Spinner"
+        app:layout_constraintLeft_toLeftOf = "@+id/textTitleSettings"
+        app:layout_constraintRight_toRightOf = "@+id/textTitleSettings"
+        app:layout_constraintTop_toBottomOf = "@+id/textTitleSettings" />
+
+
+    <TextView
+        android:id = "@+id/textViewDialog"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginEnd = "33dp"
+        android:layout_marginStart = "33dp"
+        android:layout_marginTop = "20dp"
+        android:gravity = "center_horizontal"
+        android:text = "@string/my_teams"
+        android:textAlignment = "center"
+        android:textColor = "@android:color/white"
+        android:textSize = "18sp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/spinnerFilterChar" />
+
+    <Spinner
+        android:id = "@+id/spinnerMLB"
+        style = "@style/mySpinnerItemStyle"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:padding = "16dp"
+        android:popupBackground = "@color/blackhalftransparent"
+        android:theme = "@android:style/Widget.Holo.Light.DropDownItem.Spinner"
+        app:layout_constraintLeft_toLeftOf = "@+id/spinnerFilterChar"
+        app:layout_constraintRight_toRightOf = "@+id/spinnerFilterChar"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewDialog" />
+
+    <Spinner
+        android:id = "@+id/spinnerNFL"
+        style = "@style/mySpinnerItemStyle"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:padding = "16dp"
+        android:popupBackground = "@color/blackhalftransparent"
+        android:theme = "@android:style/Widget.Holo.Light.DropDownItem.Spinner"
+        app:layout_constraintLeft_toLeftOf = "@+id/spinnerFilterChar"
+        app:layout_constraintRight_toRightOf = "@+id/spinnerFilterChar"
+        app:layout_constraintTop_toBottomOf = "@+id/spinnerMLB" />
+
+    <Spinner
+        android:id = "@+id/spinnerNHL"
+        style = "@style/mySpinnerItemStyle"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:padding = "16dp"
+        android:popupBackground = "@color/blackhalftransparent"
+        android:theme = "@android:style/Widget.Holo.Light.DropDownItem.Spinner"
+        app:layout_constraintLeft_toLeftOf = "@+id/spinnerFilterChar"
+        app:layout_constraintRight_toRightOf = "@+id/spinnerFilterChar"
+        app:layout_constraintTop_toBottomOf = "@+id/spinnerNFL" />
+
+    <Spinner
+        android:id = "@+id/spinnerNBA"
+        style = "@style/mySpinnerItemStyle"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:padding = "16dp"
+        android:popupBackground = "@color/blackhalftransparent"
+        android:theme = "@android:style/Widget.Holo.Light.DropDownItem.Spinner"
+        app:layout_constraintLeft_toLeftOf = "@+id/spinnerFilterChar"
+        app:layout_constraintRight_toRightOf = "@+id/spinnerFilterChar"
+        app:layout_constraintTop_toBottomOf = "@+id/spinnerNHL" />
+
+    <Button
+        android:id = "@+id/buttonClearHistory"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center_horizontal"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:padding = "12dp"
+        android:text = "@string/ch"
+        android:textAllCaps = "false"
+        android:textColor = "@android:color/white"
+        android:textSize = "18sp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "@+id/spinnerFilterChar"
+        app:layout_constraintRight_toRightOf = "@+id/spinnerFilterChar"
+        app:layout_constraintTop_toBottomOf = "@+id/spinnerNBA" />
+
+</android.support.constraint.ConstraintLayout>

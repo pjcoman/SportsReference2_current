@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@drawable/fansbackground"
+    android:orientation = "vertical"
+    tools:context = ".MainActivityKotlin">
+
+    <android.support.design.widget.TabLayout
+        android:id = "@+id/simpleTabLayout"
+        style = "@android:style/Widget.TabWidget"
+        android:layout_width = "match_parent"
+        android:layout_height = "60dp"
+        android:background = "@color/blackhalftransparent"
+        app:tabBackground = "@drawable/layout_rounded_corners_blacktogray"
+        app:tabIndicatorColor = "#f00"
+        app:tabSelectedTextColor = "#f00"
+        app:tabTextColor = "#000" />
+
+
+    <ImageView
+        android:id = "@+id/imageView"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:scaleType = "fitXY"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+    <android.support.v4.view.ViewPager
+        android:id = "@+id/simpleViewPager"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:background = "@android:color/transparent"
+        app:layout_behavior = "@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf = "@+id/spinnerHistory"
+        app:layout_constraintTop_toBottomOf = "@+id/simpleTabLayout">
+
+    </android.support.v4.view.ViewPager>
+
+    <Spinner
+        android:id = "@+id/spinnerHistory"
+        android:layout_width = "0dp"
+        android:layout_height = "50dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:popupBackground = "@color/blackhalftransparent"
+        android:theme = "?android:attr/dropDownSpinnerStyle"
+        android:visibility = "visible"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent" />
+
+</android.support.constraint.ConstraintLayout>

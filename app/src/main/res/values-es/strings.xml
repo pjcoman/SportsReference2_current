@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="edittext_hint">nombre de pila</string>
+<string name="edittext_hint2">presione para borrar</string>
+<string name="edittext_hint3">jugador / liga / temporada (es decir, 2016)</string>
+<string name="app_name">Referencia deportiva</string>
+<string name="instructions">Pulsación larga para favoritos y temporizador en la configuración</string>
+
+<string name="timer">Segundos hasta Auto-Enter</string>
+<string name="chtoast">historia borrada"</string>
+    <string name="ch">HISTORIA CLARA</string>
+<string name="settings">ajustes</string>
+<string name="sbt">barra de búsqueda TOP</string>
+<string name="sbb">barra de búsqueda INFERIOR</string>
+<string name="my_teams">mis equipos</string>
+</resources>

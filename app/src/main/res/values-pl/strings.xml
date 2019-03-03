@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "edittext_hint">Imię</string>
+    <string name = "edittext_hint2">naciśnij, aby usunąć</string>
+    <string name = "edittext_hint3">gracz / liga / sezon (tj. 2016)</string>
+    <string name = "app_name">Sportowe odwołanie</string>
+    <string name = "instructions">Długie naciśnięcie zakładek i timera w ustawieniach</string>
+    <string name = "timer">Sekunda na automatyczne wprowadzenie</string>
+    <string name = "chtoast">usunięta historia</string>
+    <string name = "ch">czysta historia</string>
+    <string name = "settings">ustawienia</string>
+    <string name = "sbt">pasek wyszukiwania Góra</string>
+    <string name = "sbb">dół search bar</string>
+    <string name = "my_teams">moje zespoły</string>
+
+
+</resources>

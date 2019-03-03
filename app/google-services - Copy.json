@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "737182347639",
+    "firebase_url": "https://sportsreference2.firebaseio.com",
+    "project_id": "sportsreference2",
+    "storage_bucket": "sportsreference2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737182347639:android:14b5a00f7f21156b",
+        "android_client_info": {
+          "package_name": "comapps.com.sportsreference2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737182347639-kq4vuqj2ho4hrqd13cfr7airaju05c4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKp2-raB8AQPGX7_nCYPlbHFyGH6FvnGY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737182347639-kq4vuqj2ho4hrqd13cfr7airaju05c4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

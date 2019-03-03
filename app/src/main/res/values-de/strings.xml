@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name = "edittext_hint">vorname</string>
+    <string name = "edittext_hint2">drücken um</string>
+    <string name = "edittext_hint3">spieler / liga / saison (d. h. 2016)</string>
+    <string name = "app_name">Sportreferenz</string>
+    <string name = "instructions">Drücken Sie lange auf Lesezeichen und Timer in den
+        Einstellungen</string>
+    <string name = "timer">Sekunden für die automatische Eingabe</string>
+    <string name = "chtoast">gelöschter Verlauf</string>
+    <string name = "ch">klare Geschichte</string>
+    <string name = "settings">einstellungen</string>
+    <string name = "sbt">Suchleiste oben</string>
+    <string name = "sbb">unten Suchleiste</string>
+    <string name = "my_teams">meine teams</string>
+
+</resources>

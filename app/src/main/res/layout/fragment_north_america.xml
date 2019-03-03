@@ -1,0 +1,219 @@
+<android.support.constraint.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_margin = "20dp"
+    android:background = "@android:color/transparent"
+    tools:context = "comapps.com.sportsreference2.NorthAmericaFragment">
+
+
+    <TextView
+        android:id = "@+id/textViewI"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_centerVertical = "false"
+        android:background = "@drawable/back"
+        android:gravity = "center"
+        android:padding = "6dp"
+        android:text = "@string/instructions"
+        android:textColor = "@android:color/white"
+        android:textSize = "14sp"
+        android:textStyle = "bold"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+
+
+    <CheckBox
+        android:id = "@+id/checkBoxInstructions"
+        style = "@android:style/Widget.CompoundButton.CheckBox"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/textViewI"
+        android:layout_centerHorizontal = "true"
+        android:layout_margin = "6dp"
+        android:background = "@drawable/back"
+        android:checked = "true"
+        android:padding = "6dp"
+        android:text = "@string/show"
+        android:textColor = "@android:color/white"
+        android:textSize = "14sp"
+        android:visibility = "gone"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewI" />
+
+    <ImageButton
+        android:id = "@+id/button1"
+        style = "@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_gravity = "center"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:contentDescription = "@string/bbicon"
+        android:padding = "20dp"
+        android:scaleType = "fitXY"
+        android:src = "@drawable/baseballreftitlebar"
+        android:visibility = "visible"
+        app:layout_constraintBottom_toTopOf = "@+id/button3"
+        app:layout_constraintEnd_toStartOf = "@+id/button2"
+        app:layout_constraintHorizontal_bias = "0.5"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/checkBoxInstructions"
+        app:layout_constraintVertical_bias = ".333" />
+
+    <TextView
+        android:id = "@+id/textViewBaseballFav"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:padding = "4dp"
+        android:textColor = "@android:color/white"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "@+id/button1"
+        app:layout_constraintLeft_toLeftOf = "@+id/button1"
+        app:layout_constraintRight_toRightOf = "@+id/button1" />
+
+    <ImageButton
+        android:id = "@+id/button2"
+        style = "@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_gravity = "center"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:contentDescription = "@string/fbicon"
+        android:padding = "20dp"
+        android:scaleType = "fitXY"
+        android:src = "@drawable/footballreftitlebar"
+        app:layout_constraintBottom_toTopOf = "@+id/button4"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.5"
+        app:layout_constraintStart_toEndOf = "@+id/button1"
+        app:layout_constraintTop_toBottomOf = "@+id/checkBoxInstructions" />
+
+    <TextView
+        android:id = "@+id/textViewFootballFav"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:padding = "4dp"
+        android:textColor = "@android:color/white"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "@+id/button2"
+        app:layout_constraintLeft_toLeftOf = "@+id/button2"
+        app:layout_constraintRight_toRightOf = "@+id/button2" />
+
+
+    <ImageButton
+        android:id = "@+id/button3"
+        style = "@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_gravity = "center"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:contentDescription = "@string/hicon"
+        android:padding = "20dp"
+        android:scaleType = "fitXY"
+        android:src = "@drawable/hockeyreftitlebar"
+        android:visibility = "visible"
+        app:layout_constraintBottom_toTopOf = "@+id/button5"
+        app:layout_constraintEnd_toStartOf = "@+id/button4"
+        app:layout_constraintHorizontal_bias = "0.5"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/button1"
+        app:layout_constraintVertical_bias = ".333" />
+
+    <TextView
+        android:id = "@+id/textViewHockeyFav"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:padding = "4dp"
+        android:textColor = "@android:color/white"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "@+id/button3"
+        app:layout_constraintLeft_toLeftOf = "@+id/button3"
+        app:layout_constraintRight_toRightOf = "@+id/button3" />
+
+    <ImageButton
+        android:id = "@+id/button4"
+        style = "@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_gravity = "center"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:contentDescription = "@string/bkbicon"
+        android:padding = "20dp"
+        android:scaleType = "fitXY"
+        android:src = "@drawable/basketballreftitlebar"
+        android:visibility = "visible"
+        app:layout_constraintBottom_toTopOf = "@+id/button6"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.5"
+        app:layout_constraintStart_toEndOf = "@+id/button3"
+        app:layout_constraintTop_toBottomOf = "@+id/button2" />
+
+    <TextView
+        android:id = "@+id/textViewBasketballFav"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:padding = "4dp"
+        android:textColor = "@android:color/white"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "@+id/button4"
+        app:layout_constraintLeft_toLeftOf = "@+id/button4"
+        app:layout_constraintRight_toRightOf = "@+id/button4" />
+
+
+    <ImageButton
+        android:id = "@+id/button5"
+        style = "@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_gravity = "center"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:contentDescription = "@string/cfbicon"
+        android:padding = "20dp"
+        android:scaleType = "fitXY"
+        android:src = "@drawable/collegefootballreftitlebar"
+        android:visibility = "visible"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toStartOf = "@+id/button6"
+        app:layout_constraintHorizontal_bias = "0.5"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/button3"
+        app:layout_constraintVertical_bias = ".333" />
+
+    <ImageButton
+        android:id = "@+id/button6"
+        style = "@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_gravity = "center"
+        android:layout_margin = "20dp"
+        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
+        android:contentDescription = "@string/cbbicon"
+        android:padding = "20dp"
+        android:scaleType = "fitXY"
+        android:src = "@drawable/collegebasketballreftitlebar"
+        android:visibility = "visible"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.5"
+        app:layout_constraintStart_toEndOf = "@+id/button5"
+        app:layout_constraintTop_toBottomOf = "@+id/button4" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:visibility = "gone"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent" />
+
+
+</android.support.constraint.ConstraintLayout>

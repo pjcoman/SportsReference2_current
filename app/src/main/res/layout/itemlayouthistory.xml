@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:layout_marginLeft = "30dp"
+    android:layout_marginRight = "30dp"
+    android:paddingBottom = "5dp"
+    android:paddingTop = "5dp">
+
+
+    <ImageView
+        android:id = "@+id/imageViewIconHistory"
+        android:layout_width = "0dp"
+        android:layout_height = "40dp"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginStart = "20dp"
+        android:contentDescription = '"icon"'
+        android:maxWidth = "30dp"
+        android:minHeight = "30dp"
+        android:scaleType = "fitXY"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+    <TextView
+        android:id = "@+id/textViewNameHistory"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:gravity = "center"
+        android:padding = "6dp"
+        android:text = "@string/name"
+        android:textColor = "@color/cardview_light_background"
+        android:textSize = "14sp"
+        app:layout_constraintLeft_toRightOf = "@+id/imageViewIconHistory"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+    <TextView
+        android:id = "@+id/textViewTypeHistory"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:gravity = "center"
+        android:text = "@string/type"
+        android:textColor = "@color/cardview_light_background"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "@+id/textViewNameHistory"
+        app:layout_constraintLeft_toRightOf = "@+id/textViewNameHistory"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+</android.support.constraint.ConstraintLayout>
