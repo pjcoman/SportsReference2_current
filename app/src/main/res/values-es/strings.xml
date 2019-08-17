@@ -3,6 +3,7 @@
 <string name="edittext_hint">nombre de pila</string>
 <string name="edittext_hint2">presione para borrar</string>
 <string name="edittext_hint3">jugador / liga / temporada (es decir, 2016)</string>
+<string name="edittext_dt">toca dos veces arriba para volver</string>
 <string name="app_name">Referencia deportiva</string>
 <string name="instructions">Pulsación larga para favoritos y temporizador en la configuración</string>
 

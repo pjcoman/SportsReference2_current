@@ -26,6 +26,7 @@ class Prefs(context: Context) {
     private val TIMER_INT = "timer_integer"
     private val SHOW_INSTRUCTIONS = "show_instructions"
     private val ON_BOTTOM = "on_bottom"
+    private val AUTO8 = "auto8"
 
     private val prefs: SharedPreferences = context.getSharedPreferences(PREFS_FILENAME, 0)
 
@@ -77,9 +78,15 @@ class Prefs(context: Context) {
         get() = prefs.getInt(TIMER_INT, 4)
         set(value) = prefs.edit().putInt(TIMER_INT, value).apply()
 
+
     var showInstructions: Boolean
         get() = prefs.getBoolean(SHOW_INSTRUCTIONS, true)
         set(value) = prefs.edit().putBoolean(SHOW_INSTRUCTIONS, value).apply()
+
+
+    var checkBoxAuto8: Boolean
+        get() = prefs.getBoolean(AUTO8, false)
+        set(value) = prefs.edit().putBoolean(AUTO8, value).apply()
 
     var searchBarBottom: Boolean
         get() = prefs.getBoolean(ON_BOTTOM, true)

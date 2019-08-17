@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android = "http://schemas.android.com/apk/res/android"
     xmlns:app = "http://schemas.android.com/apk/res-auto"
-    android:id = "@+id/framelayoutsi"
+    xmlns:tools="http://schemas.android.com/tools" android:id = "@+id/framelayoutsi"
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
     android:orientation = "vertical">
 
 
 
-    <android.support.constraint.ConstraintLayout android:id="@+id/constraintlayoutsi"
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/constraintlayoutsi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
@@ -37,63 +37,71 @@
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            android:autofillHints="" tools:targetApi="o" />
 
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/sportsItemRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|end"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
             android:focusableInTouchMode="false"
-            android:foregroundGravity="center_horizontal"
-            android:paddingTop="60dp"
+            android:foregroundGravity="bottom|center_horizontal"
             app:layout_constraintBottom_toTopOf="@+id/searchText"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:stackFromEnd="true">
 
-        </android.support.v7.widget.RecyclerView>
+        </androidx.recyclerview.widget.RecyclerView>
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <FrameLayout
-        android:id="@+id/fl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_Progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:background="@drawable/layout_rounded_corners_blacktogray_lr"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="100dp"
         android:visibility="gone">
 
 
         <ProgressBar
             android:id="@+id/progressSpinner"
-            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
             android:clickable="false"
             android:max="100"
-            android:paddingTop="40dp"
             android:progress="0"
-            android:secondaryProgress="100">
+            android:secondaryProgress="100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="200dp">
 
         </ProgressBar>
 
         <TextView
-            android:id="@+id/textViewProgress"
+            android:id="@+id/textViewProgressPercentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:textColor="@android:color/background_light"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/progressSpinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/progressSpinner" />
 
 
-    </FrameLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

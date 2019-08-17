@@ -7,20 +7,17 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.os.Bundle
-import android.os.Parcelable
-import android.support.annotation.RequiresApi
-import android.support.design.widget.TabLayout
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.ViewPager
-import android.support.v7.app.AlertDialog
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.*
 import android.widget.*
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import java.text.Normalizer
-import java.util.regex.Pattern
 
 
 /*fun deAccent(str: String): String {
@@ -60,6 +57,7 @@ class MainActivityKotlin : AppCompatActivity() {
     private var spinnerNHL: Spinner? = null
     private var spinnerNBA: Spinner? = null
     private var spinnerFilterCount: Spinner? = null
+    private var checkBoxAuto8: CheckBox? = null
     private var spinnerHistory: Spinner? = null
 
     private var userIsInteracting: Boolean = false
@@ -69,14 +67,13 @@ class MainActivityKotlin : AppCompatActivity() {
     private var adapter: PagerAdapter? = null
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         setTheme(R.style.MyTheme)
 
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tabbedlayoutmain2)
+        setContentView(R.layout.tabbedlayoutmain)
 
         val actionBar = supportActionBar
 
@@ -147,7 +144,6 @@ class MainActivityKotlin : AppCompatActivity() {
         loadHistory()
 
 
-
     }
 
     //****************************************MENU ***************************************************
@@ -171,6 +167,7 @@ class MainActivityKotlin : AppCompatActivity() {
         // as you specify a parent activity in AndroidManifest.xml.
         val id = item.itemId
 
+
         if (id == R.id.searchBarLayout) {
 
             prefs.searchBarBottom = !prefs.searchBarBottom
@@ -193,6 +190,8 @@ class MainActivityKotlin : AppCompatActivity() {
             spinnerNFL = mView.findViewById<View>(R.id.spinnerNFL) as Spinner
             spinnerNHL = mView.findViewById<View>(R.id.spinnerNHL) as Spinner
             spinnerNBA = mView.findViewById<View>(R.id.spinnerNBA) as Spinner
+
+            checkBoxAuto8 = mView.findViewById(R.id.checkBoxAutoSend) as CheckBox
 
             spinnerMLBAdapter = ItemSpinnerAdapter(applicationContext, resources.getStringArray(R.array.mlbteams))
             spinnerMLBAdapter!!.notifyDataSetInvalidated()
@@ -222,6 +221,23 @@ class MainActivityKotlin : AppCompatActivity() {
             spinnerNFL!!.setSelection(prefs.nflfav)
             spinnerNHL!!.setSelection(prefs.nhlfav)
             spinnerNBA!!.setSelection(prefs.nbafav)
+
+
+            checkBoxAuto8!!.isChecked == prefs.checkBoxAuto8
+
+            checkBoxAuto8!!.setOnCheckedChangeListener { buttonView, isChecked ->
+                prefs.checkBoxAuto8 = true
+
+
+                if ( prefs.checkBoxAuto8 ) {
+
+                    checkBoxAuto8!!.isChecked == true
+                } else {
+                    checkBoxAuto8!!.isChecked == false
+                }
+            }
+
+
 
 
 
@@ -308,7 +324,7 @@ class MainActivityKotlin : AppCompatActivity() {
 
             clearHistory.setOnClickListener {
 
-                prefs.sportsItemHistory = "[{\"name\":\"search history\"}]"
+                prefs.sportsItemHistory = "[{\"name\":\"selection history\"}]"
                 itemsHistory.clear()
                 spinnerHistoryAdapter!!.notifyDataSetChanged()
 
@@ -366,15 +382,11 @@ class MainActivityKotlin : AppCompatActivity() {
     }
 
 
-
-
-
-
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
 
         val item = menu!!.findItem(R.id.searchBarLayout)
 
-        if ( prefs.searchBarBottom ) {
+        if (prefs.searchBarBottom) {
             item.title = resources.getString(R.string.sbt)
         } else {
             item.title = resources.getString(R.string.sbb)
@@ -401,17 +413,17 @@ class MainActivityKotlin : AppCompatActivity() {
     private fun loadHistory() {
 
 
-
-        println("$TAG itemsHistory size ${itemsHistory.size}")
-        println("$TAG sportsItemHistory ---> ${prefs.sportsItemHistory}")
-
         try {
 
+/*
+
+            println("$TAG itemsHistory size ${itemsHistory.size}")
+            println("$TAG sportsItemHistory ---> ${prefs.sportsItemHistory}")
+
+*/
 
 
-
-
-            itemsHistory = Gson().fromJson<java.util.ArrayList<SportsItem>>(prefs.sportsItemHistory, type)
+            itemsHistory = Gson().fromJson(prefs.sportsItemHistory, type)
 
             /* if (!(prefs.sih).contains(resources.getString(R.string.sh))) {
 
@@ -509,7 +521,7 @@ class MainActivityKotlin : AppCompatActivity() {
             if (view == null) {
                 val inflater = context.getSystemService(
                         Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-                view = inflater.inflate(R.layout.itemlayouthistory2, viewGroup, false)
+                view = inflater.inflate(R.layout.itemlayouthistory, viewGroup, false)
 
             }
 
@@ -526,7 +538,6 @@ class MainActivityKotlin : AppCompatActivity() {
 
 
             txtName.text = itemFromHistory.name
-
 
 
             /* if (itemFromHistory.type == "player" || itemFromHistory.type == "team"
@@ -563,7 +574,7 @@ class MainActivityKotlin : AppCompatActivity() {
                 imgView.setImageBitmap(bmh)
             } else if (itemFromHistory.sport == "college_football") {
                 imgView.setImageBitmap(bmcfb)
-            } else if (itemFromHistory.sport == "college_basketball")    {
+            } else if (itemFromHistory.sport == "college_basketball") {
                 imgView.setImageBitmap(bmcbb)
             } else {
                 imgView.setImageBitmap(bmsr)
@@ -638,25 +649,13 @@ class MainActivityKotlin : AppCompatActivity() {
         }
 
 
-
     }
-
-
-
 
 
     override fun onUserInteraction() {
         super.onUserInteraction()
         userIsInteracting = true
     }
-
-
-
-
-
-
-
-
 
 
 }

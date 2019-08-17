@@ -6,12 +6,12 @@ import android.graphics.RectF
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.support.customtabs.CustomTabsIntent
-import android.support.v7.app.AppCompatActivity
 import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.View
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.browser.customtabs.CustomTabsIntent
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -85,7 +85,7 @@ class WebView : AppCompatActivity() {
 
   //      println("$TAG pre GSON sIO --> " + intent.extras.getString("sportItemObject"))
 
-        var programIntent: String = intent!!.extras!!.getString("sentFrom", "")
+        val programIntent: String = intent!!.extras!!.getString("sentFrom", "")
 
         val sportsItemObject: SportsItem? = intent!!.getParcel()
 
@@ -218,7 +218,7 @@ class WebView : AppCompatActivity() {
         itemsHistory = ArrayList()
 
         try {
-            itemsHistory = Gson().fromJson<java.util.ArrayList<SportsItem>>(prefs.sportsItemHistory, type)
+            itemsHistory = Gson().fromJson(prefs.sportsItemHistory, type)
         } catch (e: Exception) {
         }
 
@@ -298,14 +298,15 @@ class WebView : AppCompatActivity() {
           webView!!.restoreState(savedState)
       }*/
 
-    override fun onPause() {
+    /*override fun onPause() {
 
-        finish()
+
         super.onPause()
-    }
+    }*/
 
     override fun onBackPressed() {
 
+        finish()
 
     }
 

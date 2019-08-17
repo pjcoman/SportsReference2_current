@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="rectangle">
+
+    <corners android:radius="10dp" />
+
+    <gradient
+        android:angle="0"
+        android:endColor="#ff000000"
+        android:centerColor="#56aaaaaa"
+        android:centerX="20%"
+        android:startColor="#00000000"/>
+
+    <stroke android:color="#80FFFFFF" android:width="0dp" />
+            <!--corners allow us to make the rounded corners button-->
+    <corners android:radius="0dp" />
+    </shape>
+
+

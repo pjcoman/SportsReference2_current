@@ -4,6 +4,7 @@
     <string name = "edittext_hint">vorname</string>
     <string name = "edittext_hint2">drücken um</string>
     <string name = "edittext_hint3">spieler / liga / saison (d. h. 2016)</string>
+    <string name = "edittext_dt">doppeltippen sie oben, um zurückzukehren</string>
     <string name = "app_name">Sportreferenz</string>
     <string name = "instructions">Drücken Sie lange auf Lesezeichen und Timer in den
         Einstellungen</string>

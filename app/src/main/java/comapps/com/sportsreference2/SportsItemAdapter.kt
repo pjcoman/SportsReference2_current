@@ -1,11 +1,10 @@
 package comapps.com.sportsreference2
 
 import android.content.Intent
-import android.support.v4.content.ContextCompat.startActivity
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import kotlinx.android.synthetic.main.itemlayoutrecycler_constraint.view.*
 import java.util.*
 
@@ -14,7 +13,7 @@ import java.util.*
  * Created by me on 2/26/2018.
  */
 class SportsItemAdapter(private val listSportsItems: MutableList<SportsItem>) :
-        RecyclerView.Adapter<SportsItemAdapter.ViewHolder>() {
+        androidx.recyclerview.widget.RecyclerView.Adapter<SportsItemAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout
@@ -41,10 +40,10 @@ class SportsItemAdapter(private val listSportsItems: MutableList<SportsItem>) :
 
 
 
-        var schoolLink = listSportsItems[position].schoolLink
+        val schoolLink = listSportsItems[position].schoolLink
 
 
-        if ( !schoolLink.isNullOrEmpty() ) {
+        if ( !schoolLink.isEmpty() ) {
 
             holder.itemView.setOnLongClickListener {
 
@@ -70,7 +69,7 @@ class SportsItemAdapter(private val listSportsItems: MutableList<SportsItem>) :
     override fun getItemCount() = listSportsItems.size
 
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
 
 
         fun bindForecast(sportsItem: SportsItem) {
@@ -108,7 +107,7 @@ class SportsItemAdapter(private val listSportsItems: MutableList<SportsItem>) :
 
                     if ( sport == "basketball" ) {
 
-                        itemView.textViewSeasons.text = "debut NBA ${this.firstSeason}"
+                        itemView.textViewSeasons.text = "debut ${this.firstSeason}"
 
                     }
 
@@ -143,7 +142,7 @@ class SportsItemAdapter(private val listSportsItems: MutableList<SportsItem>) :
                     if (this.schoolLink.contains("https")) {
 
 
-                        val longClickString = schoolOrTeamText + "\n" + "long click for college stats"
+                        val longClickString = "$schoolOrTeamText\nlong click for college stats"
 
 
                         itemView.textViewSchoolOrTeam.text = longClickString.replace(

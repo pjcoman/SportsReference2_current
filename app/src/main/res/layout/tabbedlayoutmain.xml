@@ -1,56 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
-    xmlns:app = "http://schemas.android.com/apk/res-auto"
-    xmlns:tools = "http://schemas.android.com/tools"
-    android:layout_width = "match_parent"
-    android:layout_height = "match_parent"
-    android:background = "@drawable/fansbackground"
-    android:orientation = "vertical"
-    tools:context = ".MainActivityKotlin">
-
-    <android.support.design.widget.TabLayout
-        android:id = "@+id/simpleTabLayout"
-        style = "@android:style/Widget.TabWidget"
-        android:layout_width = "match_parent"
-        android:layout_height = "60dp"
-        android:background = "@color/blackhalftransparent"
-        app:tabBackground = "@drawable/layout_rounded_corners_blacktogray"
-        app:tabIndicatorColor = "#f00"
-        app:tabSelectedTextColor = "#f00"
-        app:tabTextColor = "#000" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fansbackground2"
+    android:orientation="vertical"
+    android:paddingTop="?android:attr/actionBarSize"
+    tools:context=".MainActivityKotlin">
 
 
-    <ImageView
+    <!--   <ImageView
         android:id = "@+id/imageView"
         android:layout_width = "0dp"
         android:layout_height = "0dp"
+        android:contentDescription = "@string/contentdes"
         android:scaleType = "fitXY"
         app:layout_constraintBottom_toBottomOf = "parent"
         app:layout_constraintLeft_toLeftOf = "parent"
         app:layout_constraintRight_toRightOf = "parent"
-        app:layout_constraintTop_toTopOf = "parent" />
+        app:layout_constraintTop_toTopOf = "parent" />-->
 
-    <android.support.v4.view.ViewPager
-        android:id = "@+id/simpleViewPager"
-        android:layout_width = "match_parent"
-        android:layout_height = "0dp"
-        android:background = "@android:color/transparent"
-        app:layout_behavior = "@string/appbar_scrolling_view_behavior"
-        app:layout_constraintBottom_toTopOf = "@+id/spinnerHistory"
-        app:layout_constraintTop_toBottomOf = "@+id/simpleTabLayout">
+    <!-- <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
 
-    </android.support.v4.view.ViewPager>
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/simpleTabLayout"
+        style="@android:style/Widget.TabWidget"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#f00"
+        app:tabSelectedTextColor="#f00"
+        app:tabTextColor="#000" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/simpleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerHistory"
+        app:layout_constraintTop_toBottomOf="@+id/simpleTabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
 
     <Spinner
-        android:id = "@+id/spinnerHistory"
-        android:layout_width = "0dp"
-        android:layout_height = "50dp"
-        android:background = "@drawable/layout_rounded_corners_graytoblack_item"
-        android:popupBackground = "@color/blackhalftransparent"
-        android:theme = "?android:attr/dropDownSpinnerStyle"
-        android:visibility = "visible"
-        app:layout_constraintBottom_toBottomOf = "parent"
-        app:layout_constraintLeft_toLeftOf = "parent"
-        app:layout_constraintRight_toRightOf = "parent" />
+        android:id="@+id/spinnerHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/fui_transparent"
+        android:dropDownWidth="wrap_content"
+        android:maxHeight="60dp"
+        android:minHeight="40dp"
+        android:padding="8dp"
+        android:popupBackground="@drawable/layout_rounded_corners_blacktogray_lr"
+        android:prompt="@string/sh"
+        android:spinnerMode="dropdown"
+        android:theme="@android:style/TextAppearance.DeviceDefault.Widget.DropDownHint"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleViewPager" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

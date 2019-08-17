@@ -6,13 +6,17 @@
     <string
         name="edittext_hint2">press for clear</string>
     <string
-        name="edittext_hint3">player/league/season (i.e. 2016)</string>
+        name="edittext_hint3">player/country/league/year</string>
 
-    <string name="app_name">sports reference</string>
+    <string
+        name="edittext_dt">double tap after clear: back</string>
+
+
+    <string name="app_name">the great sports reference</string>
 
     <string name="name" translatable = "false">Name</string>
     <string name="type" translatable = "false">type</string>
-    <string name="instructions">Long press for favorites and timer in settings.</string>
+    <string name="instructions">favorites and timer in settings</string>
     <string name="show" translatable = "false">show instructions</string>
 
     <string-array name="sports">
@@ -362,7 +366,7 @@
 
     <string name="quickstart_disabled" translatable = "false">BASKETBALL</string>
 
-    <string name="my_teams">my teams</string>
+    <string name="my_teams">my teams ( long press )</string>
     <string name="bbicon" translatable = "false">bbicon</string>
     <string name="fbicon" translatable = "false">fbicon</string>
     <string name="hicon" translatable = "false">hicon</string>
@@ -370,10 +374,11 @@
     <string name="cfbicon" translatable = "false">cfbicon</string>
     <string name="cbbicon" translatable = "false">cbbicon</string>
     <string name="ftbicon" translatable = "false">ftbicon</string>
-    <string name = "sh" translatable = "false">search history</string>
+    <string name = "sh" translatable = "false">selection history</string>
     <string name = "contentdes" translatable = "false">background image</string>
     <string name = "icon" translatable = "false">icon</string>
     <string name = "iconString" translatable = "false">icon</string>
+    <string name="auto_send_after_8_char">auto send after 8 char.</string>
 
 
 </resources>
